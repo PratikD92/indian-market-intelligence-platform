@@ -24,8 +24,8 @@ This bundle defines what the platform is, what it aims to achieve, and the bound
 
 | Document              | Purpose                                                                 |
 | --------------------- | ----------------------------------------------------------------------- |
-| `product-overview.md` | High-level overview, target users, core capabilities, and project goal. |
-| `scope.md`            | Defines what is intentionally included and excluded from the project.   |
+| [product_overview.md](product_overview.md) | High-level overview, target users, core capabilities, and project goal. |
+| [scope.md](scope.md)            | Defines what is intentionally included and excluded from the project.   |
 
 ## Related Bundles
 

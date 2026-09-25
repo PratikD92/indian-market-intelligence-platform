@@ -26,9 +26,9 @@ The personas provide business context for features, workflows, and evaluation sc
 
 | Document                | Purpose                                                     |
 | ----------------------- | ----------------------------------------------------------- |
-| `casual-investor.md`    | AI-assisted investment research.                            |
-| `financial-analyst.md`  | Deep financial and industry analysis.                       |
-| `compliance-officer.md` | Compliance, ownership, governance, and regulatory research. |
+| [casual_investor.md](casual_investor.md)    | AI-assisted investment research.                            |
+| [financial_analyst.md](financial_analyst.md)  | Deep financial and industry analysis.                       |
+| [compliance_officer.md](compliance_officer.md) | Compliance, ownership, governance, and regulatory research. |
 
 ## Related Bundles
 

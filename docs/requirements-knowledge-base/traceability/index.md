@@ -38,7 +38,7 @@ This approach makes the Requirements Knowledge Base suitable for both human navi
 
 | Document                         | Purpose                                                                                    |
 | -------------------------------- | ------------------------------------------------------------------------------------------ |
-| `feature-traceability-matrix.md` | Canonical mapping between workflows, features, services, agents, and evaluation ownership. |
+| [feature_traceability_matrix.md](feature_traceability_matrix.md) | Canonical mapping between workflows, features, services, agents, and evaluation ownership. |
 
 ## Traceability Model
 
