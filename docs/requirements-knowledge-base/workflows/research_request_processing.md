@@ -57,4 +57,4 @@ The workflow follows the Level-2 sequence defined in the architecture.
 * [Compliance Officer](../personas/compliance_officer.md)
 * [Multi-Agent Execution](multi_agent_execution.md)
 * [Feature Traceability Matrix](../traceability/feature_traceability_matrix.md)
-* [Research Request Processing Architecture](../../architecture/workflows/Worklfow_3-research_request_processing-v1.pdf)
+* [Research Request Processing Architecture](../../architecture/workflows/workflow_03_research_request_processing_v1.pdf)

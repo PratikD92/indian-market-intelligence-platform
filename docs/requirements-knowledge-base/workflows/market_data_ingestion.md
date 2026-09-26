@@ -51,4 +51,4 @@ The workflow follows the Level-2 sequence defined in the architecture.
 
 * [Casual Investor](../personas/casual_investor.md)
 * [Feature Traceability Matrix](../traceability/feature_traceability_matrix.md)
-* [Market Data Ingestion Workflow](../../architecture/workflows/Worklfow_1-market_data_ingestion-v1.pdf)
+* [Market Data Ingestion Workflow](../../architecture/workflows/workflow_01_market_data_ingestion_v1.pdf)

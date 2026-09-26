@@ -60,4 +60,4 @@ The workflow follows the Level-2 sequence defined in the architecture.
 * [Project Overview](../product/product_overview.md)
 * [Feature Traceability Matrix](../traceability/feature_traceability_matrix.md)
 * [Load Generation](../benchmark/load_generation.md)
-* [Capacity Validation Benchmark Architecture](../../architecture/workflows/Worklfow_6-capacity_validation_benchmark-v1.pdf)
+* [Capacity Validation Benchmark Architecture](../../architecture/workflows/workflow_06_capacity_validation_benchmark_v1.pdf)

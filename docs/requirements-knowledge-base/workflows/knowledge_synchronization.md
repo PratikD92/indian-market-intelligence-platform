@@ -57,4 +57,4 @@ The workflow follows the Level-2 sequence defined in the architecture.
 ## Related Documents
 
 * [Feature Traceability Matrix](../traceability/feature_traceability_matrix.md)
-* [Knowledge Synchronization Architecture](../../architecture/workflows/Worklfow_2-knowledge_sync-v1.pdf)
+* [Knowledge Synchronization Architecture](../../architecture/workflows/workflow_02_knowledge_synchronization_v1.pdf)

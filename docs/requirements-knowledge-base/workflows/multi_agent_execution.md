@@ -60,4 +60,4 @@ The workflow follows the Level-2 sequence defined in the architecture.
 
 * [Research Request Processing](research_request_processing.md)
 * [Feature Traceability Matrix](../traceability/feature_traceability_matrix.md)
-* [Multi-Agent Execution Architecture](../../architecture/workflows/Worklfow_4-multi_agent_execution-v1.pdf)
+* [Multi-Agent Execution Architecture](../../architecture/workflows/workflow_04_multi_agent_execution_v1.pdf)

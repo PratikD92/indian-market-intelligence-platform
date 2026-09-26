@@ -54,4 +54,4 @@ The workflow follows the Level-2 sequence defined in the architecture.
 
 * [Financial Analyst](../personas/financial_analyst.md)
 * [Feature Traceability Matrix](../traceability/feature_traceability_matrix.md)
-* [Report Generation & Approval Architecture](../../architecture/workflows/Worklfow_5-report_gen_human_approval-v1.pdf)
+* [Report Generation & Approval Architecture](../../architecture/workflows/workflow_05_report_generation_human_approval_v1.pdf)
