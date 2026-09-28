@@ -32,7 +32,7 @@ Every feature originates from exactly one primary workflow and maps to the micro
 | ---------- | ----------------------------------- | ----------------------------- |  ------------------------------ | ------------------- | --------------------- |
 | FEAT-001   | Research API Request                | Research Request Processing   | Research API Service           | Root Agent          | Functional + DeepEval |
 | FEAT-002   | Intent Classification               | Research Request Processing   | Intent Service                 | Root Agent          | Functional            |
-| FEAT-003   | Policy & Guardrail Enforcement      | Research Request Processing   | Policy / Guardrail Service     | Compliance Agent    | Promptfoo             |
+| FEAT-003   | Policy & Guardrail Enforcement      | Research Request Processing   | Policy / Guardrail Service     | Compliance Agent    | DeepTeam             |
 | FEAT-004   | Research Orchestration              | Research Request Processing   | Research Orchestrator          | Root Agent          | DeepEval              |
 | FEAT-005   | Multi-Agent Planning                | Multi-Agent Execution         | Research / Agent Service       | Root Agent          | DeepEval              |
 | FEAT-006   | External Data Retrieval             | Multi-Agent Execution         | MCP / Tool Service             | Fetch Agent         | Functional            |
@@ -57,7 +57,7 @@ Every feature originates from exactly one primary workflow and maps to the micro
 | FEAT-025   | LLM Evaluation Pipeline             | Capacity Validation Benchmark | LLM Evaluation Service         | —                   | Functional            |
 | FEAT-026   | Offline RAG Evaluation              | Capacity Validation Benchmark | LLM Evaluation Service         | —                   | Ragas                 |
 | FEAT-027   | Offline Agent Evaluation            | Capacity Validation Benchmark | LLM Evaluation Service         | —                   | DeepEval              |
-| FEAT-028   | Prompt Security Validation          | Capacity Validation Benchmark | LLM Evaluation Service         | Compliance Agent    | Promptfoo             |
+| FEAT-028   | Prompt Security Validation          | Capacity Validation Benchmark | LLM Evaluation Service         | Compliance Agent    | DeepTeam             |
 
 ---
 ## Validation Methods
@@ -69,7 +69,7 @@ Each feature identifies its primary validation method. The following definitions
 | Functional Testing | Verifies deterministic business logic, API behavior, workflow execution, service integration, and expected outputs. |
 | Ragas | Evaluates retrieval quality, groundedness, context recall, and answer relevance for RAG workflows. |
 | DeepEval | Evaluates multi-agent reasoning quality, task completion, response correctness, and synthesis quality. |
-| Promptfoo | Validates prompt security, jailbreak resistance, prompt injection resilience, and regression behavior. |
+| DeepTeam | Validates prompt security, jailbreak resistance, prompt injection resilience, and regression behavior. |
 | Benchmark Verification | Confirms scalability claims by validating throughput, latency, availability, and resource utilization during benchmark execution. |
 
 ---
@@ -133,7 +133,7 @@ Each feature identifies its primary validation method. The following definitions
 | Functional Testing | FEAT-002, FEAT-006, FEAT-011, FEAT-012, FEAT-013, FEAT-014, FEAT-016, FEAT-017, FEAT-018, FEAT-019, FEAT-021, FEAT-022, FEAT-023, FEAT-024, FEAT-025 |
 | Ragas              | FEAT-015, FEAT-026                                                                                                                                   |
 | DeepEval           | FEAT-001, FEAT-004, FEAT-005, FEAT-007, FEAT-008, FEAT-009, FEAT-010, FEAT-020, FEAT-027                                                             |
-| Promptfoo          | FEAT-003, FEAT-028                                                                                                                                   |
+| DeepTeam          | FEAT-003, FEAT-028                                                                                                                                   |
 
 ---
 
