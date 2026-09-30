@@ -20,7 +20,7 @@ tags:
 
 ## Purpose
 
-The Feature Traceability Matrix is the canonical mapping between user workflows, product capabilities, implementation ownership, AI agents, and validation strategy.
+The Feature Traceability Matrix is the canonical mapping between user workflows, microservices, product capabilities, implementation ownership, AI agents, and validation strategy.
 
 Every feature originates from exactly one primary workflow and maps to the microservice responsible for delivering that capability.
 
