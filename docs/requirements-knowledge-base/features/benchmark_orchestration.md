@@ -19,7 +19,7 @@ tags:
 
 ## Purpose
 
-Orchestrate large-scale capacity validation benchmarks to verify platform performance, availability, and scalability against the defined benchmark profile of 1M MAU.
+Orchestrate large-scale capacity validation benchmarks to verify platform performance, availability, and scalability against the defined benchmark profile of 1 Million Monthly Active Users (1M MAU).
 
 ## Primary Workflow
 
