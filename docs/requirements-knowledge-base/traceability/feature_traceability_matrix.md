@@ -57,7 +57,7 @@ Every feature originates from exactly one primary workflow and maps to the micro
 | FEAT-025   | LLM Evaluation Pipeline             | Capacity Validation Benchmark | LLM Evaluation Service         | —                   | Functional            |
 | FEAT-026   | Offline RAG Evaluation              | Capacity Validation Benchmark | LLM Evaluation Service         | —                   | Ragas                 |
 | FEAT-027   | Offline Agent Evaluation            | Capacity Validation Benchmark | LLM Evaluation Service         | —                   | DeepEval              |
-| FEAT-028   | Prompt Security Validation          | Capacity Validation Benchmark | LLM Evaluation Service         | Compliance Agent    | DeepTeam             |
+| FEAT-028   | AI Security & Red-Team Evaluation          | Capacity Validation Benchmark | LLM Evaluation Service         | Compliance Agent    | DeepTeam             |
 
 ---
 ## Validation Methods

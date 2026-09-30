@@ -37,7 +37,7 @@ None — evaluation execution is deterministic and does not require an AI agent.
 ## Acceptance Criteria
 
 * Execute configured evaluation suites against defined datasets.
-* Support RAG, agent, and prompt-security evaluation workflows.
+* Support RAG, agent, and AI Security & Red-Team evaluation workflows.
 * Calculate and record configured evaluation metrics.
 * Compare evaluation results against defined quality thresholds.
 * Store evaluation results and history for analysis and release decisions.

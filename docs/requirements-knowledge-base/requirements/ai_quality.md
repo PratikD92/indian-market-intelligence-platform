@@ -41,7 +41,7 @@ The following requirements define the mandatory AI quality capabilities of the p
 | -------------------------- | ---------------------- |
 | Offline RAG Evaluation     | LLM Evaluation Service |
 | Offline Agent Evaluation   | LLM Evaluation Service |
-| Prompt Security Validation | LLM Evaluation Service |
+| AI Security & Red-Team Evaluation | LLM Evaluation Service |
 | Live LLM Tracing           | Observability Stack    |
 | Experiment Tracking        | Observability Stack    |
 
