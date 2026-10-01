@@ -46,5 +46,5 @@ The following requirements define the mandatory scalability capabilities of the 
 ## Related Documents
 
 * [Capacity Validation Benchmark](../workflows/capacity_validation_benchmark.md)
-* [Load Generation TBA](../benchmark/load_generation.md)
+* [Load Generation](../benchmark/load_generation.md)
 * [Feature Traceability Matrix](../traceability/feature_traceability_matrix.md)

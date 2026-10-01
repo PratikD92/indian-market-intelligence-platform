@@ -28,8 +28,8 @@ Requirements and expected behavior are documented in the Requirements Knowledge 
 | [Solution Architecture](solution_architecture_v2.pdf)           | End-to-end platform architecture.                   |
 | [Microservices Architecture](microservices_architecture_v4.pdf) | Service decomposition and communication.            |
 | [User Journeys](user_journeys_v1.pdf)                           | User journey diagrams for the three personas.       |
-| [Workflow Diagrams TBA](workflows/)                                 | Implementation diagrams for the six core workflows. |
-| [Benchmark Assets TBA](benchmark/)                                  | Visual assets supporting benchmark validation.      |
+| [Workflow Diagrams](workflows/index.md)                         | Implementation diagrams for the six core workflows. |
+| [Benchmark Assets](benchmark/index.md)                          | Visual assets supporting benchmark validation.      |
 
 ## Workflow Diagrams
 
@@ -48,4 +48,4 @@ Requirements and expected behavior are documented in the Requirements Knowledge 
 * [Personas](../requirements-knowledge-base/personas/index.md)
 * [Workflows](../requirements-knowledge-base/workflows/index.md)
 * [Traceability](../requirements-knowledge-base/traceability/index.md)
-* [Architecture Decision Records TBA](../ADR/)
+* [Architecture Decision Records](../ADR/index.md)

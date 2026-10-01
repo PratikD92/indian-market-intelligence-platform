@@ -35,5 +35,5 @@ This bundle defines the platform capabilities and quality expectations required 
 
 * [Workflows](../workflows/index.md) — End-to-end platform behavior.
 * [Traceability](../traceability/index.md) — Mapping between workflows, features, and services.
-* [Benchmark TBA](../benchmark/index.md) — Load assumptions and benchmark validation.
+* [Benchmark](../benchmark/index.md) — Load assumptions and benchmark validation.
 * [Architecture](../../architecture/index.md) — System and workflow implementation diagrams.

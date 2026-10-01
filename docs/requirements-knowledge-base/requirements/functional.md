@@ -42,4 +42,4 @@ The following requirements define the mandatory capabilities of the platform:
 
 * [Workflows](../workflows/index.md)
 * [Feature Traceability Matrix](../traceability/feature_traceability_matrix.md)
-* [Load Generation TBA](../benchmark/load_generation.md)
+* [Load Generation](../benchmark/load_generation.md)
