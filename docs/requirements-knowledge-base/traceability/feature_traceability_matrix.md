@@ -89,27 +89,27 @@ Each feature identifies its primary validation method. The following definitions
 
 ## Service Ownership Summary
 
-| Service                        | Owned Features                                   |
-| ------------------------------ | ------------------------------------------------ |
-| Market Data Service            | FEAT-011, FEAT-012                               |
-| Knowledge Sync Service         | FEAT-013                                         |
-| Document Processing Service    | FEAT-014                                         |
-| Embedding Service              | FEAT-015                                         |
-| Entity & Relationship Service  | FEAT-016                                         |
-| Knowledge Store Service        | FEAT-017                                         |
-| Research API Service           | FEAT-001                                         |
-| Intent Service                 | FEAT-002                                         |
-| Policy / Guardrail Service     | FEAT-003                                         |
-| Research Orchestrator          | FEAT-004                                         |
-| Research / Agent Service       | FEAT-005, FEAT-007, FEAT-008, FEAT-009, FEAT-010 |
-| MCP / Tool Service             | FEAT-006                                         |
-| Report Workflow Service        | FEAT-018, FEAT-019                               |
-| Report Generation Service      | FEAT-020                                         |
-| Notification Service           | FEAT-021                                         |
-| Benchmark Controller Service   | FEAT-022                                         |
-| Load Generator                 | FEAT-023                                         |
-| Benchmark Verification Service | FEAT-024                                         |
-| LLM Evaluation Service         | FEAT-025, FEAT-026, FEAT-027, FEAT-028           |
+|Service ID | Service                        | Owned Features                                   |
+|---------|------------------------------|--------------------------------------------------|
+|MS-001|Market Data Service            | FEAT-011, FEAT-012                               |
+|MS-002|Knowledge Sync Service         | FEAT-013                                         |
+|MS-003|Document Processing Service    | FEAT-014                                         |
+|MS-004|Embedding Service              | FEAT-015                                         |
+|MS-005|Entity & Relationship Service  | FEAT-016                                         |
+|MS-006|Knowledge Store Service        | FEAT-017                                         |
+|MS-007|Research API Service           | FEAT-001                                         |
+|MS-008|Intent Service                 | FEAT-002                                         |
+|MS-009|Policy / Guardrail Service     | FEAT-003                                         |
+|MS-010|Research Orchestrator          | FEAT-004                                         |
+|MS-011|Research / Agent Service       | FEAT-005, FEAT-007, FEAT-008, FEAT-009, FEAT-010 |
+|MS-012|MCP / Tool Service             | FEAT-006                                         |
+|MS-013|Report Workflow Service        | FEAT-018, FEAT-019                               |
+|MS-014|Report Generation Service      | FEAT-020                                         |
+|MS-015|Notification Service           | FEAT-021                                         |
+|MS-016|Benchmark Controller Service   | FEAT-022                                         |
+|MS-017|Load Generator                 | FEAT-023                                         |
+|MS-018|Benchmark Verification Service | FEAT-024                                         |
+|MS-019|LLM Evaluation Service         | FEAT-025, FEAT-026, FEAT-027, FEAT-028           |
 
 ---
 
