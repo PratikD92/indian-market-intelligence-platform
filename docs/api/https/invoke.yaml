@@ -1,0 +1,14 @@
+endpoint: /api/v1/invoke
+method: POST
+
+summary: Explicitly invoke a multi-agent research workflow.
+
+request:
+  task: string
+  company_id: string?
+  workflow: string
+
+response:
+  request_id: uuid
+  status: string
+  result: object?

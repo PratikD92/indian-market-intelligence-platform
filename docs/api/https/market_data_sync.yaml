@@ -1,0 +1,11 @@
+endpoint: /internal/v1/market-data/sync
+method: POST
+
+summary: Trigger market data synchronization from configured external sources.
+
+request:
+  source: string?
+
+response:
+  request_id: uuid
+  status: string

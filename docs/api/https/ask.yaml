@@ -1,0 +1,15 @@
+endpoint: /api/v1/ask
+method: POST
+
+summary: Answer a question using RAG or GraphRAG.
+
+request:
+  question: string
+  company_id: string?
+
+response:
+  request_id: uuid
+  answer: string
+  sources:
+    - title: string
+      source: string

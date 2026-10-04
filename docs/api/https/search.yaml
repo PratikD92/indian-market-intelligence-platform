@@ -1,0 +1,15 @@
+endpoint: /api/v1/search
+method: POST
+
+summary: Search company or financial information using database, RAG, or GraphRAG.
+
+request:
+  query: string
+  company_id: string?
+
+response:
+  request_id: uuid
+  results:
+    - title: string
+      content: string
+      source: string

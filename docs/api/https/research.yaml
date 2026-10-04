@@ -1,0 +1,13 @@
+endpoint: /api/v1/research
+method: POST
+
+summary: Submit a structured research request for coordinated research execution.
+
+request:
+  query: string
+  company_id: string?
+  research_type: string?
+
+response:
+  request_id: uuid
+  status: string

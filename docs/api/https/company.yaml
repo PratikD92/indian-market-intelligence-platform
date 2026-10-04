@@ -1,0 +1,73 @@
+company:
+  - endpoint: /api/v1/companies/{company_id}
+    method: GET
+    summary: Retrieve company information.
+
+    request:
+      company_id: string
+
+    response:
+      company_id: string
+      name: string
+      data: object
+
+
+  - endpoint: /api/v1/companies/{company_id}/financials
+    method: GET
+    summary: Retrieve company financial information.
+
+    request:
+      company_id: string
+
+    response:
+      company_id: string
+      financials: object
+
+
+  - endpoint: /api/v1/companies/{company_id}/ownership
+    method: POST
+    summary: Analyze the ownership structure of a company.
+
+    request:
+      company_id: string
+
+    response:
+      request_id: uuid
+      company_id: string
+      ownership: object
+      sources:
+        - title: string
+          source: string
+
+
+  - endpoint: /api/v1/companies/{company_id}/directors
+    method: POST
+    summary: Analyze company directors and their relationships.
+
+    request:
+      company_id: string
+
+    response:
+      request_id: uuid
+      company_id: string
+      directors: object
+      sources:
+        - title: string
+          source: string
+
+
+  - endpoint: /api/v1/companies/{company_id}/regulations
+    method: POST
+    summary: Retrieve and analyze regulatory information relevant to a company.
+
+    request:
+      company_id: string
+      query: string?
+
+    response:
+      request_id: uuid
+      company_id: string
+      regulations: object
+      sources:
+        - title: string
+          source: string

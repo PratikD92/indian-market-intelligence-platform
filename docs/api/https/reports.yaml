@@ -1,0 +1,51 @@
+reports:
+
+  - endpoint: /api/v1/reports
+    method: POST
+    summary: Create a long-running research report workflow.
+
+    request:
+      query: string
+      company_id: string?
+      report_type: string?
+
+    response:
+      report_id: uuid
+      status: string
+
+
+  - endpoint: /api/v1/reports/{report_id}
+    method: GET
+    summary: Retrieve a generated research report.
+
+    request:
+      report_id: uuid
+
+    response:
+      report_id: uuid
+      status: string
+      report: object?
+
+
+  - endpoint: /api/v1/reports/{report_id}/status
+    method: GET
+    summary: Retrieve the current state of a report workflow.
+
+    request:
+      report_id: uuid
+
+    response:
+      report_id: uuid
+      status: string
+
+
+  - endpoint: /api/v1/reports/{report_id}/approve
+    method: POST
+    summary: Approve a report and continue the report workflow.
+
+    request:
+      report_id: uuid
+
+    response:
+      report_id: uuid
+      status: string
