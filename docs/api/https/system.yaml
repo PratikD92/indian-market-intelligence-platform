@@ -1,0 +1,20 @@
+# HEALTH CHECK
+endpoint: /v1/health
+method: GET
+summary: Liveness check.
+owner_service: All services
+personas: []
+response:
+  status: string
+
+
+# READINESS CHECK
+endpoint: /v1/ready
+method: GET
+summary: Readiness check.
+owner_service: All services
+personas: []
+response:
+  status: string
+
+

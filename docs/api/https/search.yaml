@@ -1,15 +1,16 @@
-endpoint: /api/v1/search
-method: POST
-
-summary: Search company or financial information using database, RAG, or GraphRAG.
-
+# COMPANY PROFILE LOOKUP
+endpoint: /v1/companies/{ticker}
+method: GET
+summary: Deterministic company profile lookup from the curated pool (no LLM).
+owner_service: Research API Service
+personas: [Casual Investor]
 request:
-  query: string
-  company_id: string?
-
+  ticker: string   # path
 response:
-  request_id: uuid
-  results:
-    - title: string
-      content: string
-      source: string
+  ticker: string
+  name: string
+  founded_date: string
+  ceo_owner: string
+  headquarters: string
+  industry: string
+  source: string

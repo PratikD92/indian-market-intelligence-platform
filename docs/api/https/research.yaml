@@ -1,13 +1,14 @@
-endpoint: /api/v1/research
+
+# RESEARCH COMPANY
+endpoint: /v1/companies/{ticker}/research
 method: POST
-
-summary: Submit a structured research request for coordinated research execution.
-
+summary: Research Company, synchronous. Returns stored report, or one assembled from Postgres + pgvector, or multi-agent output for wtf companies.
+owner_service: Research Orchestrator
+personas: [Financial Analyst]
 request:
-  query: string
-  company_id: string?
+  ticker: string   # path
   research_type: string?
-
 response:
   request_id: uuid
-  status: string
+  ticker: string
+  report: object

@@ -1,73 +1,65 @@
-company:
-  - endpoint: /api/v1/companies/{company_id}
-    method: GET
-    summary: Retrieve company information.
 
-    request:
-      company_id: string
-
-    response:
-      company_id: string
-      name: string
-      data: object
-
-
-  - endpoint: /api/v1/companies/{company_id}/financials
-    method: GET
-    summary: Retrieve company financial information.
-
-    request:
-      company_id: string
-
-    response:
-      company_id: string
-      financials: object
+# OWNERSHIP ANALYSIS
+endpoint: /v1/companies/{ticker}/ownership
+method: POST
+summary: Ownership analysis. Fetch Agent queries GraphRAG, Valkey is checked first.
+owner_service: Research Orchestrator
+personas: [Compliance Officer]
+request:
+  ticker: string   # path
+response:
+  request_id: uuid
+  ticker: string
+  ownership: object
+  sources:
+    - title: string
+      source: string
 
 
-  - endpoint: /api/v1/companies/{company_id}/ownership
-    method: POST
-    summary: Analyze the ownership structure of a company.
-
-    request:
-      company_id: string
-
-    response:
-      request_id: uuid
-      company_id: string
-      ownership: object
-      sources:
-        - title: string
-          source: string
-
-
-  - endpoint: /api/v1/companies/{company_id}/directors
-    method: POST
-    summary: Analyze company directors and their relationships.
-
-    request:
-      company_id: string
-
-    response:
-      request_id: uuid
-      company_id: string
-      directors: object
-      sources:
-        - title: string
-          source: string
+# DIRECTOR RELATIONSHIP ANALYSIS
+endpoint: /v1/companies/{ticker}/directors
+method: POST
+summary: Director relationship analysis. Fetch Agent queries GraphRAG, Valkey is checked first.
+owner_service: Research Orchestrator
+personas: [Compliance Officer]
+request:
+  ticker: string   # path
+response:
+  request_id: uuid
+  ticker: string
+  directors: object
+  sources:
+    - title: string
+      source: string
 
 
-  - endpoint: /api/v1/companies/{company_id}/regulations
-    method: POST
-    summary: Retrieve and analyze regulatory information relevant to a company.
+# REGULATORY INFORMATION
+endpoint: /v1/companies/{ticker}/regulations
+method: GET
+summary: Pre-ingested regulatory info returned as-is (Valkey → Postgres, no LLM).
+owner_service: Research API Service
+personas: [Compliance Officer]
+request:
+  ticker: string   # path
+response:
+  ticker: string
+  regulations:
+    - title: string
+      text: string
+      source: string
 
-    request:
-      company_id: string
-      query: string?
 
-    response:
-      request_id: uuid
-      company_id: string
-      regulations: object
-      sources:
-        - title: string
-          source: string
+# COMPARE COMPANIES
+endpoint: /v1/companies/compare
+method: POST
+summary: Compare companies. Fetch Agent queries GraphRAG and produces a fixed-format comparison, Valkey is checked first.
+owner_service: Research Orchestrator
+personas: [Financial Analyst]
+request:
+  tickers: [string]
+response:
+  request_id: uuid
+  comparison: object
+  sources:
+    - title: string
+      source: string

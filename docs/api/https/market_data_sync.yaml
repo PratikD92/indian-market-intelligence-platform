@@ -1,11 +1,11 @@
+# MARKET DATA SYNC
 endpoint: /internal/v1/market-data/sync
 method: POST
-
-summary: Trigger market data synchronization from configured external sources.
-
+summary: Scheduler-triggered ingestion for market data, news and regulatory sources.
+owner_service: Market Data Ingestion Service
+personas: []
 request:
   source: string?
-
 response:
   request_id: uuid
   status: string

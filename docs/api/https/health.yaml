@@ -1,9 +1,0 @@
-endpoint: /api/v1/health
-method: GET
-
-summary: Check whether the service is alive.
-
-request: {}
-
-response:
-  status: string

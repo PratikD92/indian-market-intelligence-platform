@@ -1,51 +1,26 @@
-reports:
-
-  - endpoint: /api/v1/reports
-    method: POST
-    summary: Create a long-running research report workflow.
-
-    request:
-      query: string
-      company_id: string?
-      report_type: string?
-
-    response:
-      report_id: uuid
-      status: string
+# VIEW REPORT
+endpoint: /v1/companies/{ticker}/report
+method: GET
+summary: View existing report for a company. Research report takes priority over search report.
+owner_service: Report Workflow Service
+personas: [Casual Investor, Financial Analyst, Compliance Officer]
+request:
+  ticker: string   # path
+response:
+  ticker: string
+  report_type: enum[research, search]
+  report: object
 
 
-  - endpoint: /api/v1/reports/{report_id}
-    method: GET
-    summary: Retrieve a generated research report.
-
-    request:
-      report_id: uuid
-
-    response:
-      report_id: uuid
-      status: string
-      report: object?
-
-
-  - endpoint: /api/v1/reports/{report_id}/status
-    method: GET
-    summary: Retrieve the current state of a report workflow.
-
-    request:
-      report_id: uuid
-
-    response:
-      report_id: uuid
-      status: string
-
-
-  - endpoint: /api/v1/reports/{report_id}/approve
-    method: POST
-    summary: Approve a report and continue the report workflow.
-
-    request:
-      report_id: uuid
-
-    response:
-      report_id: uuid
-      status: string
+# GENERATE REPORT
+endpoint: /v1/companies/{ticker}/report-generate
+method: POST
+summary: Generate Report, async. Returns 200 with completed if a report already exists, otherwise 202 and starts the HITL-simulated workflow. Completion is announced by the reportGenerated event.
+owner_service: Report Workflow Service
+personas: [Financial Analyst]
+request:
+  ticker: string   # path
+  report_type: string?
+response:
+  report_id: uuid
+  status: enum[pending, completed]

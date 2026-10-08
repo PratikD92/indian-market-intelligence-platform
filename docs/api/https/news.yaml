@@ -1,0 +1,15 @@
+# NEWS ARTICLES
+endpoint: /v1/companies/{ticker}/news
+method: GET
+summary: Pre-scraped news articles (Valkey → Postgres, no LLM).
+owner_service: Research API Service
+personas: [Casual Investor]
+request:
+  ticker: string   # path
+response:
+  ticker: string
+  articles:
+    - title: string
+      source: string
+      published_at: string
+      content: string
