@@ -2,7 +2,7 @@
 # RESEARCH COMPANY
 endpoint: /v1/companies/{ticker}/research
 method: POST
-summary: Research Company, synchronous. Returns stored report, or one assembled from Postgres + pgvector, or multi-agent output for wtf companies.
+summary: Research Company, synchronous. Returns stored report, or one assembled from Postgres + pgvector, or multi-agent output for novel companies.
 owner_service: Research Orchestrator
 personas: [Financial Analyst]
 request:
@@ -12,3 +12,6 @@ response:
   request_id: uuid
   ticker: string
   report: object
+usage:
+  - /v1/companies/TCS/research
+  - /v1/companies/INFY/research

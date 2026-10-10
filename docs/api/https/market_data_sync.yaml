@@ -9,3 +9,7 @@ request:
 response:
   request_id: uuid
   status: string
+usage:
+# tickers are in the body, so the body is shown inline
+  - /internal/v1/market-data/sync {"source": "NSE"}
+  - /internal/v1/market-data/sync {}

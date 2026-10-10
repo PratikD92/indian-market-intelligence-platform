@@ -14,3 +14,6 @@ response:
   headquarters: string
   industry: string
   source: string
+usage:
+  - /v1/companies/HDFCBANK
+  - /v1/companies/RELIANCE

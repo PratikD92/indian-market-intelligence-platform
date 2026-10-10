@@ -14,6 +14,9 @@ response:
   sources:
     - title: string
       source: string
+usage:
+  - /v1/companies/HDFCBANK/ownership
+  - /v1/companies/TATAMOTORS/ownership
 
 
 # DIRECTOR RELATIONSHIP ANALYSIS
@@ -31,6 +34,9 @@ response:
   sources:
     - title: string
       source: string
+usage:
+  - /v1/companies/INFY/directors
+  - /v1/companies/ADANIENT/directors
 
 
 # REGULATORY INFORMATION
@@ -47,7 +53,10 @@ response:
     - title: string
       text: string
       source: string
-
+usage:
+  - /v1/companies/HDFCBANK/regulations
+  - /v1/companies/SBIN/regulations
+  
 
 # COMPARE COMPANIES
 endpoint: /v1/companies/compare
@@ -63,3 +72,7 @@ response:
   sources:
     - title: string
       source: string
+usage:
+# tickers are in the body, so the body is shown inline
+  - /v1/companies/compare {"tickers": ["HDFCBANK", "ICICIBANK"]}
+  - /v1/companies/compare {"tickers": ["TCS", "INFY", "WIPRO"]}

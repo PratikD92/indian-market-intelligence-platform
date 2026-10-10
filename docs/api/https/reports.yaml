@@ -10,6 +10,9 @@ response:
   ticker: string
   report_type: enum[research, search]
   report: object
+usage:
+  - /v1/companies/HDFCBANK/report
+  - /v1/companies/ITC/report
 
 
 # GENERATE REPORT
@@ -24,3 +27,6 @@ request:
 response:
   report_id: uuid
   status: enum[pending, completed]
+usage:
+  - /v1/companies/RELIANCE/report-generate
+  - /v1/companies/HDFCBANK/report-generate
