@@ -31,7 +31,7 @@ User or API request.
 
 * Research API Service
 * Intent Service
-* Policy / Guardrail Service
+* Policy and Guardrail Service
 * Research Orchestrator
 
 ## High-Level Flow

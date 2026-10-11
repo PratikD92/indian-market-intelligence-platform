@@ -27,7 +27,7 @@ Retrieve relevant external information from trusted sources during research exec
 
 ## Owner Service
 
-MCP / Tool Service
+MCP and Tool Service
 
 ## Primary Agent
 

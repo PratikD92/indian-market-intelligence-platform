@@ -75,4 +75,4 @@ response:
 usage:
 # tickers are in the body, so the body is shown inline
   - /v1/companies/compare {"tickers": ["HDFCBANK", "ICICIBANK"]}
-  - /v1/companies/compare {"tickers": ["TCS", "INFY", "WIPRO"]}
+  - /v1/companies/compare {"tickers": ["TCS", "INFY"]}

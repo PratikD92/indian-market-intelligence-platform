@@ -24,10 +24,10 @@ This index defines the user-facing and capability-level features of the platform
 | ---------- | ---------------------------------- | ------------------------------------------------------------------------------ | ---------------------------- |
 | FEAT-001   | [Research API Request](research_api_request.md)               | [Research Request Processing](../workflows/research_request_processing.md)     | Research API Service         |
 | FEAT-002   | [Intent Classification](intent_classification.md)              | [Research Request Processing](../workflows/research_request_processing.md)     | Intent Service               |
-| FEAT-003   | [Policy & Guardrail Enforcement](policy_guardrails_enforcement.md)     | [Research Request Processing](../workflows/research_request_processing.md)     | Policy / Guardrail Service   |
+| FEAT-003   | [Policy & Guardrail Enforcement](policy_guardrails_enforcement.md)     | [Research Request Processing](../workflows/research_request_processing.md)     | Policy and Guardrail Service   |
 | FEAT-004   | [Research Orchestration](research_orchestration.md)             | [Research Request Processing](../workflows/research_request_processing.md)     | Research Orchestrator        |
-| FEAT-005   | [Multi-Agent Planning](multi_agent_planning.md)               | [Multi-Agent Execution](../workflows/multi_agent_execution.md)                 | Research / Agent Service     |
-| FEAT-006   | [External Data Retrieval](external_data_retrieval.md)            | [Multi-Agent Execution](../workflows/multi_agent_execution.md)                 | MCP / Tool Service           |
+| FEAT-005   | [Multi-Agent Planning](multi_agent_planning.md)               | [Multi-Agent Execution](../workflows/multi_agent_execution.md)                 | Agent Service     |
+| FEAT-006   | [External Data Retrieval](external_data_retrieval.md)            | [Multi-Agent Execution](../workflows/multi_agent_execution.md)                 | MCP and Tool Service           |
 | FEAT-011   | [Market Data Collection](market_data_collection.md)             | [Market Data Ingestion](../workflows/market_data_ingestion.md)                 | Market Data Service          |
 | FEAT-013   | [Knowledge Synchronization Pipeline](knowledge_synchronization_pipeline.md) | [Knowledge Synchronization](../workflows/knowledge_synchronization.md)         | Knowledge Sync Service       |
 | FEAT-018   | [Report Workflow Management](report_workflow_management.md)         | [Report Generation & Approval](../workflows/report_generation_approval.md)     | Report Workflow Service      |

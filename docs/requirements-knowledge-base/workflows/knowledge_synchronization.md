@@ -31,8 +31,6 @@ Transform newly ingested market and company data into searchable knowledge for r
 
 * Knowledge Sync Service
 * Document Processing Service
-* Embedding Service
-* Entity & Relationship Service
 * Knowledge Store Service
 
 ## High-Level Flow

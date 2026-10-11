@@ -30,8 +30,8 @@ Research Request Processing workflow.
 **Services**
 
 * Research Orchestrator
-* Research / Agent Service
-* MCP / Tool Service
+* Agent Service
+* MCP and Tool Service
 
 **Agents**
 

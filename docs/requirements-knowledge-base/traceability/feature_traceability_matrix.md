@@ -30,22 +30,22 @@ Every feature originates from exactly one primary workflow and maps to the micro
 
 | Feature ID | Feature                             | Primary Workflow              |  Owner Service                  | Primary Agent       | Validation            |
 | ---------- | ----------------------------------- | ----------------------------- |  ------------------------------ | ------------------- | --------------------- |
-| FEAT-001   | Research API Request                | Research Request Processing   | Research API Service           | Root Agent          | Functional + DeepEval |
-| FEAT-002   | Intent Classification               | Research Request Processing   | Intent Service                 | Root Agent          | Functional            |
-| FEAT-003   | Policy & Guardrail Enforcement      | Research Request Processing   | Policy / Guardrail Service     | Compliance Agent    | DeepTeam             |
-| FEAT-004   | Research Orchestration              | Research Request Processing   | Research Orchestrator          | Root Agent          | DeepEval              |
-| FEAT-005   | Multi-Agent Planning                | Multi-Agent Execution         | Research / Agent Service       | Root Agent          | DeepEval              |
-| FEAT-006   | External Data Retrieval             | Multi-Agent Execution         | MCP / Tool Service             | Fetch Agent         | Functional            |
-| FEAT-007   | Financial Statement Analysis        | Multi-Agent Execution         | Research / Agent Service       | Financial Expert    | DeepEval              |
-| FEAT-008   | Compliance & Ownership Analysis     | Multi-Agent Execution         | Research / Agent Service       | Compliance Agent    | DeepEval              |
-| FEAT-009   | Industry Research                   | Multi-Agent Execution         | Research / Agent Service       | Industry Researcher | DeepEval              |
-| FEAT-010   | Research Synthesis                  | Multi-Agent Execution         | Research / Agent Service       | Consolidation Agent | DeepEval              |
-| FEAT-011   | Market Data Collection              | Market Data Ingestion         | Market Data Service            | —         | Functional            |
-| FEAT-012   | Raw Data Validation & Normalization | Market Data Ingestion         | Market Data Service            | —         | Functional            |
+| FEAT-001   | Research API Request                | Research Request Processing   | Research API Service            | Root Agent          | Functional + DeepEval |
+| FEAT-002   | Intent Classification               | Research Request Processing   | Intent Service                  | Root Agent          | Functional            |
+| FEAT-003   | Policy & Guardrail Enforcement      | Research Request Processing   | Policy and Guardrail Service    | Compliance Agent    | DeepTeam              |
+| FEAT-004   | Research Orchestration              | Research Request Processing   | Research Orchestrator           | Root Agent          | DeepEval              |
+| FEAT-005   | Multi-Agent Planning                | Multi-Agent Execution         | Agent Service                   | Root Agent          | DeepEval              |
+| FEAT-006   | External Data Retrieval             | Multi-Agent Execution         | MCP and Tool Service            | Fetch Agent         | Functional            |
+| FEAT-007   | Financial Statement Analysis        | Multi-Agent Execution         | Agent Service                   | Financial Expert    | DeepEval              |
+| FEAT-008   | Compliance & Ownership Analysis     | Multi-Agent Execution         | Agent Service                   | Compliance Agent    | DeepEval              |
+| FEAT-009   | Industry Research                   | Multi-Agent Execution         | Agent Service                   | Industry Researcher | DeepEval              |
+| FEAT-010   | Research Synthesis                  | Multi-Agent Execution         | Agent Service                   | Consolidation Agent | DeepEval              |
+| FEAT-011   | Market Data Collection              | Market Data Ingestion         | Market Data Service             | —                   | Functional            |
+| FEAT-012   | Raw Data Validation & Normalization | Market Data Ingestion         | Market Data Service             | —                   | Functional            |
 | FEAT-013   | Knowledge Synchronization Pipeline  | Knowledge Synchronization     | Knowledge Sync Service         | —         | Functional            |
 | FEAT-014   | Document Parsing                    | Knowledge Synchronization     | Document Processing Service    | —         | Functional            |
-| FEAT-015   | Embedding Generation                | Knowledge Synchronization     | Embedding Service              | —         | Ragas                 |
-| FEAT-016   | Entity & Relationship Extraction    | Knowledge Synchronization     | Entity & Relationship Service  | —         | Functional            |
+| FEAT-015   | Embedding Generation                | Knowledge Synchronization     | Knowledge Sync Service         | —         | Ragas                 |
+| FEAT-016   | Entity & Relationship Extraction    | Knowledge Synchronization     | Knowledge Sync Service         | —         | Functional            |
 | FEAT-017   | Knowledge Store Updates             | Knowledge Synchronization     | Knowledge Store Service        | —         | Functional            |
 | FEAT-018   | Report Workflow Management          | Report Generation & Approval  | Report Workflow Service        | Root Agent          | Functional            |
 | FEAT-019   | Human Approval Wait State           | Report Generation & Approval  | Report Workflow Service        | Compliance Agent    | Functional            |
@@ -92,24 +92,22 @@ Each feature identifies its primary validation method. The following definitions
 |Service ID | Service                        | Owned Features                                   |
 |---------|------------------------------|--------------------------------------------------|
 |MS-001|Market Data Service            | FEAT-011, FEAT-012                               |
-|MS-002|Knowledge Sync Service         | FEAT-013                                         |
+|MS-002|Knowledge Sync Service         | FEAT-013, FEAT-015, FEAT-016                     |
 |MS-003|Document Processing Service    | FEAT-014                                         |
-|MS-004|Embedding Service              | FEAT-015                                         |
-|MS-005|Entity & Relationship Service  | FEAT-016                                         |
-|MS-006|Knowledge Store Service        | FEAT-017                                         |
-|MS-007|Research API Service           | FEAT-001                                         |
-|MS-008|Intent Service                 | FEAT-002                                         |
-|MS-009|Policy / Guardrail Service     | FEAT-003                                         |
-|MS-010|Research Orchestrator          | FEAT-004                                         |
-|MS-011|Research / Agent Service       | FEAT-005, FEAT-007, FEAT-008, FEAT-009, FEAT-010 |
-|MS-012|MCP / Tool Service             | FEAT-006                                         |
-|MS-013|Report Workflow Service        | FEAT-018, FEAT-019                               |
-|MS-014|Report Generation Service      | FEAT-020                                         |
-|MS-015|Notification Service           | FEAT-021                                         |
-|MS-016|Benchmark Controller Service   | FEAT-022                                         |
-|MS-017|Load Generator                 | FEAT-023                                         |
-|MS-018|Benchmark Verification Service | FEAT-024                                         |
-|MS-019|LLM Evaluation Service         | FEAT-025, FEAT-026, FEAT-027, FEAT-028           |
+|MS-004|Knowledge Store Service        | FEAT-017                                         |
+|MS-005|Research API Service           | FEAT-001                                         |
+|MS-006|Intent Service                 | FEAT-002                                         |
+|MS-007|Policy and Guardrail Service     | FEAT-003                                         |
+|MS-008|Research Orchestrator          | FEAT-004                                         |
+|MS-009|Agent Service       | FEAT-005, FEAT-007, FEAT-008, FEAT-009, FEAT-010 |
+|MS-010|MCP and Tool Service             | FEAT-006                                         |
+|MS-011|Report Workflow Service        | FEAT-018, FEAT-019                               |
+|MS-012|Report Generation Service      | FEAT-020                                         |
+|MS-013|Notification Service           | FEAT-021                                         |
+|MS-014|Benchmark Controller Service   | FEAT-022                                         |
+|MS-015|Load Generator                 | FEAT-023                                         |
+|MS-016|Benchmark Verification Service | FEAT-024                                         |
+|MS-017|LLM Evaluation Service         | FEAT-025, FEAT-026, FEAT-027, FEAT-028           |
 
 ---
 

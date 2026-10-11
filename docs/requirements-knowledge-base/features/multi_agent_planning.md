@@ -27,7 +27,7 @@ Create an execution plan for a research request by decomposing the task into app
 
 ## Owner Service
 
-Research / Agent Service
+Agent Service
 
 ## Primary Agent
 

@@ -28,7 +28,7 @@ Validate research requests and AI-generated content against platform policies, s
 
 ## Owner Service
 
-Policy / Guardrail Service
+Policy and Guardrail Service
 
 ## Primary Agent
 

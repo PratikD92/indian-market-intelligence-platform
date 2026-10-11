@@ -40,7 +40,7 @@ The following requirements define the mandatory security capabilities of the pla
 | ------------------------- | -------------------------- |
 | Authentication            | Auth Service               |
 | Authorization             | OPA                        |
-| Guardrail Enforcement     | Policy / Guardrail Service |
+| Guardrail Enforcement     | Policy and Guardrail Service |
 | Sensitive Data Protection | Presidio                   |
 | Service Authentication    | gRPC + Infrastructure      |
 | Security Telemetry        | Observability Stack        |
